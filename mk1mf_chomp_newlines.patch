@@ -1,0 +1,10 @@
+--- openssl-1.0.1c/util/mk1mf.pl	Sun Feb 12 15:20:21 2012
++++ openssl-1.0.1c/util/_mk1mf.pl	Thu Jul  5 18:21:17 2012
+@@ -328,6 +328,7 @@
+ 	{
+ 	chop;
+ 
++    s/\r$//; #remove carriage return too!
+ 	($key,$val)=/^([^=]+)=(.*)/;
+ 	if ($key eq "RELATIVE_DIRECTORY")
+ 		{

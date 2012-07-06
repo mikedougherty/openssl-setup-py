@@ -1,5 +1,6 @@
 *.py[co]
-
+openssl-1.0.1c
+openssl-1.0.1c.tar.gz
 # Packages
 *.egg
 *.egg-info

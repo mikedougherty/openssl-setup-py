@@ -26,6 +26,7 @@ start_dir = os.path.dirname(os.path.abspath(__file__))
 
 class basic_command(distutils.core.Command):
     user_options = []
+    config_vars = []
 
     def initialize_options(self):
         pass
